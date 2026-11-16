@@ -12,13 +12,13 @@ Both tools support Python 3.10+ and have no runtime third-party dependencies.
 From the repository root:
 
 ```bash
-python -m pip install .
+python -m pip install https://github.com/ShalaPai4ek/Python-Security-Toolkit.git
 ```
 
 For an isolated command-line installation, use `pipx`:
 
 ```bash
-pipx install .
+pipx install https://github.com/ShalaPai4ek/Python-Security-Toolkit.git
 ```
 
 ## Use the tools
@@ -50,7 +50,7 @@ python -m pip install ./scripts/smpl-passgen
 ## Development and tests
 
 ```bash
-python -m pip install -e . pytest
+python -m pip install -e https://github.com/ShalaPai4ek/Python-Security-Toolkit.git pytest
 python -m pytest
 ```
 
