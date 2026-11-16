@@ -9,16 +9,16 @@ Both tools support Python 3.10+ and have no runtime third-party dependencies.
 
 ## Install the whole toolkit
 
-From the repository root:
+Install the toolkit directly from GitHub:
 
 ```bash
-python -m pip install https://github.com/ShalaPai4ek/Python-Security-Toolkit.git
+python -m pip install "git+https://github.com/ShalaPai4ek/Python-Security-Toolkit.git"
 ```
 
 For an isolated command-line installation, use `pipx`:
 
 ```bash
-pipx install https://github.com/ShalaPai4ek/Python-Security-Toolkit.git
+pipx install "git+https://github.com/ShalaPai4ek/Python-Security-Toolkit.git"
 ```
 
 ## Use the tools
@@ -42,17 +42,57 @@ smpl-passgen --length 20 --no-symbols
 
 ## Install tools separately
 
+You can install each tool from its own directory:
+
 ```bash
 python -m pip install ./scripts/smpl-hasher
 python -m pip install ./scripts/smpl-passgen
 ```
 
-## Development and tests
+You can also install them directly from GitHub using `pipx`:
 
 ```bash
-python -m pip install -e https://github.com/ShalaPai4ek/Python-Security-Toolkit.git pytest
+pipx install "git+https://github.com/ShalaPai4ek/Python-Security-Toolkit.git#subdirectory=scripts/smpl-hasher"
+
+pipx install "git+https://github.com/ShalaPai4ek/Python-Security-Toolkit.git#subdirectory=scripts/smpl-passgen"
+```
+
+## Development and tests
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ShalaPai4ek/Python-Security-Toolkit.git
+cd Python-Security-Toolkit
+```
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+On Windows PowerShell, activate it with:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Install the project in editable mode and install the testing tool:
+
+```bash
+python -m pip install -e .
+python -m pip install pytest
+```
+
+Run the tests:
+
+```bash
 python -m pytest
 ```
+
+Editable mode (`-e`) allows you to modify the source code without reinstalling the package after every change.
 
 ## Security notes
 
