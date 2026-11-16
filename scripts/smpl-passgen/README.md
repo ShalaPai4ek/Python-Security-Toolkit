@@ -5,8 +5,8 @@ Generate cryptographically secure random passwords using Python's `secrets` modu
 ## Install
 
 ```bash
-python -m pip install .
-# or: pipx install .
+python -m pip install https://github.com/ShalaPai4ek/Python-Security-Toolkit/tree/main/scripts/smpl-passgen
+# or: pipx install https://github.com/ShalaPai4ek/Python-Security-Toolkit/tree/main/scripts/smpl-passgen
 ```
 
 ## Examples
