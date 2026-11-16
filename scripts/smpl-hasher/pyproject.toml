@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smpl-hasher"
+version = "1.1.0"
+description = "A small, reliable command-line file hashing and verification tool"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shalapai4ek" }]
+
+[project.scripts]
+smpl-hasher = "smpl_hasher.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

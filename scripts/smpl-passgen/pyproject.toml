@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smpl-passgen"
+version = "1.1.0"
+description = "A cryptographically secure command-line password generator"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shalapai4ek" }]
+
+[project.scripts]
+smpl-passgen = "smpl_passgen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

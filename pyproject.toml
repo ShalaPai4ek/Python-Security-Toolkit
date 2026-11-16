@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-security-toolkit"
+version = "1.1.0"
+description = "A collection of small Python security command-line utilities"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shalapai4ek" }]
+
+[project.scripts]
+smpl-hasher = "smpl_hasher.cli:main"
+smpl-passgen = "smpl_passgen.cli:main"
+
+[tool.setuptools.package-dir]
+smpl_hasher = "scripts/smpl-hasher/src/smpl_hasher"
+smpl_passgen = "scripts/smpl-passgen/src/smpl_passgen"
+
+[tool.setuptools]
+packages = ["smpl_hasher", "smpl_passgen"]
