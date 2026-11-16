@@ -5,8 +5,8 @@ Calculate and verify cryptographic hashes of files. Supports algorithms provided
 ## Install
 
 ```bash
-python -m pip install .
-# or: pipx install .
+python -m pip install https://github.com/ShalaPai4ek/Python-Security-Toolkit/tree/main/scripts/smpl-hasher
+# or: pipx install https://github.com/ShalaPai4ek/Python-Security-Toolkit/tree/main/scripts/smpl-hasher
 ```
 
 ## Examples
